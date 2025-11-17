@@ -1,0 +1,21 @@
+<zk>
+<window apply ="controllers.TicToeComposer" width="100%" height="100%">
+<vbox align="center" pack="center" >
+	<hbox>
+		<button id= "b1"></button>
+		<button id = "b2"></button>
+		<button id= "b3"></button>
+	</hbox>
+	<hbox>
+		<button id = "b4"></button>
+		<button id = "b5"></button>
+		<button id = "b6"></button>
+	</hbox>
+	<hbox>
+		<button id = "b7"></button>
+		<button id = "b8"></button>
+		<button id = "b9"></button>
+	</hbox>
+</vbox>
+</window>
+</zk>

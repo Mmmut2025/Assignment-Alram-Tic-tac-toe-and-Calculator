@@ -1,0 +1,53 @@
+<window>
+	<hbox  style="background:#D6D1D1; padding:10px;"
+		align="center" width="95vw">
+
+		<!-- Left nav items -->
+		<hbox>
+			<button label="Home"
+				style="color:white; margin-right:20px;" />
+			<button label="About"
+				style="color:white; margin-right:20px;" />
+			<button label="Help"
+				style="color:white; margin-right:20px;" />
+			<button label="Contact"
+				style="color:white; margin-right:20px;" />
+		</hbox>
+
+		<!-- Flexible space to push right items -->
+		<hbox hflex="1" />
+
+		<!-- Right nav items -->
+		<hbox>
+			<button label="Login" href="login.zul"
+				style="color:white; margin-right:20px;" />
+			<button label="Signup" href="signup.zul"
+				style="color:white;" />
+		</hbox>
+	</hbox>
+	
+	<hbox pack="center" >
+		<image src='/images/home.jpeg' width="95vw" height="470px" >
+		</image>
+	</hbox>
+	
+	<hbox>
+		<hbox>
+			<fisheyebar id="fsb" style="position:absolute; margin:30px 0px 0px 100px ;" orient="horizontal" attachEdge="center" itemWidth="50" itemHeight="50" itemMaxWidth="130" itemMaxHeight="130">
+				<fisheye image="/images/calculator.png" onClick='Executions.sendRedirect("calculator2.zul")' label="Calculator">	</fisheye>
+				<fisheye image="/images/tic.png" onClick='Executions.sendRedirect("ticToe.zul")' label="Tic Toe Game" ></fisheye>
+				<fisheye image="/images/alarm.png" onClick='Executions.sendRedirect("alarm.zul")' label="Alarm" ></fisheye>
+			</fisheyebar>	
+
+		
+			<toolbar id="tb" align="end" width="96vw" style="margin:20px;">
+				<toolbarbutton image="/images/volume.jpg" onClick='alert("volume option")'> </toolbarbutton>
+				<toolbarbutton image="/images/internet.jpg" onClick='alert("internet")'> </toolbarbutton>
+				<toolbarbutton image="/images/bluetooth.jpg" onClick='alert("bluetooth option")'></toolbarbutton>
+				<toolbarbutton image="/images/battery.jpg" onClick='alert("battery option")'></toolbarbutton>
+				<toolbarbutton image="/images/setting.jpg" onClick='alert("setting")'></toolbarbutton>
+				<toolbarbutton image="/images/search.png" onClick='alert("Serch something")'></toolbarbutton>
+			</toolbar>
+		</hbox>
+	</hbox>
+</window>

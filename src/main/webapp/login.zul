@@ -1,0 +1,25 @@
+<hbox pack="center" height="100%" width="100%" align="center">
+	<window width="500px" height="280px" title="Login Form" apply="controllers.LoginComposer" border="normal">
+		<hbox pack="center" align="center" width="100%">
+			<label>User name:</label>
+			<textbox id="tUserName"></textbox>
+		</hbox>
+		<separator></separator>
+
+		<hbox pack="center" align="center" width="100%">
+			<label>Password :</label>
+			<textbox id="tPassword" type="password"></textbox>
+		</hbox>
+		<separator></separator>
+		<separator></separator>
+		<separator></separator>
+		<separator></separator>
+
+		<hbox pack="center" align="center" width="100%">
+			<button id="submit">Login</button>
+			<space></space>
+			<button id="reset">Reset</button>
+		</hbox>
+		<hbox pack="center" width="100%" style="margin-top:20px"><a href="signup.zul">Registration First</a></hbox>
+	</window>
+</hbox>

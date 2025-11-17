@@ -1,0 +1,78 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="normal">
+	<menubar>
+		<menu label="File">
+			<menupopup>
+				<menu label="New File">
+					<menupopup>
+						<menuitem label="jsp file"></menuitem>
+						<menuitem label="zul file"></menuitem>
+						<menuitem label="java file"></menuitem>
+					</menupopup>
+				</menu>
+				<menuitem label="Save"></menuitem>
+				<menuitem label="Save as.."></menuitem>
+				<menuseparator></menuseparator>
+				<menuitem label="Exit"></menuitem>
+			</menupopup>
+		</menu>
+
+		<menu label="Edit">
+			<menupopup>
+				<menuitem label="Cut"></menuitem>
+				<menuitem label="Copy"></menuitem>
+				<menuitem label="Paste"></menuitem>
+				<menuitem label="Rename"></menuitem>
+			</menupopup>
+		</menu>
+		
+		<menu label="Search">
+			<menupopup>
+				<menuitem label="Cut"></menuitem>
+				<menuitem label="Copy"></menuitem>
+				<menuitem label="Paste"></menuitem>
+				<menuitem label="Rename"></menuitem>
+			</menupopup>
+		</menu>
+		
+		<menu label="Help">
+			<menupopup>
+				<menuitem label="Cut"></menuitem>
+				<menuitem label="Copy"></menuitem>
+				<menuitem label="Paste"></menuitem>
+				<menuitem label="Rename"></menuitem>
+			</menupopup>
+		</menu>
+		
+		<menu label="Window">
+			<menupopup>
+				<menuitem label="Cut"></menuitem>
+				<menuitem label="Copy"></menuitem>
+				<menuitem label="Paste"></menuitem>
+				<menuitem label="Rename"></menuitem>
+			</menupopup>
+		</menu>
+		<menuitem label="Logout" href="index.zul"></menuitem>
+
+	</menubar>
+
+	<hbox width = "100%" height="100%" pack="center" align="center" >
+	<window><label style="font-size:30px">Welcome To My Application</label></window>	
+	</hbox>
+	
+	
+	<hbox pack="center" width="75vw">
+		
+	
+		<fisheyebar id="fsb"
+			style="position:absolute; margin:120px 0px ;" orient="horizontal" attachEdge="center" itemWidth="80" itemHeight="80" itemMaxWidth="200"
+			itemMaxHeight="200" >
+			
+			<fisheye image="/images/calculator.png" onClick='Executions.sendRedirect("calculator2.zul")' label="Calculator" ></fisheye>
+			<fisheye image="/images/tic.png" onClick='Executions.sendRedirect("ticToe.zul")' label="Tic Toe Game" > </fisheye>
+			<fisheye image="/images/alarm.png"  onClick='Executions.sendRedirect("alarm.zul")' label="Alarm" > </fisheye>
+		</fisheyebar>
+	</hbox>
+</window>
+</zk>
